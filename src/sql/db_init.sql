@@ -3,12 +3,13 @@
  * Created: Sep 08, 2017
  */
 
-CREATE DATABASE btcbe;
+DROP DATABASE IF EXISTS jochen;
+CREATE DATABASE jochen;
 
-USE btcbe;
+USE jochen;
 
-DROP USER IF EXISTS 'btcbeuser'@'localhost';
+DROP USER IF EXISTS 'jochenuser'@'localhost';
 
-CREATE USER 'btcbeuser'@'localhost' IDENTIFIED BY 'btcbeuser12345';
+CREATE USER 'jochenuser'@'localhost' IDENTIFIED BY 'jochenuser12345';
 
-GRANT ALL ON btcbe.* TO 'btcbeuser'@'localhost';
+GRANT ALL ON jochen.* TO 'jochenuser'@'localhost';
