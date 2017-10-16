@@ -1,20 +1,18 @@
 <?php
 
-namespace btcbe\mvc\controller;
+namespace jochen\mvc\controller;
 
 use Twig_Loader_Filesystem;
 use Twig_Environment;
 
 use freest\router\Router as Router;
-use btcbe\mvc\model\BusinessModel;
+
 /* 
  * Controller.php
  */
 
 class Controller 
 {
-    protected $model;
-    protected $view;
     protected $twig;
     protected $twigarr;
     
@@ -32,56 +30,68 @@ class Controller
         $this->startRouter();
     }
     
-    protected function setView(View $view) 
-    {
-        $this->view = $view;
-    }
     
-        protected function startRouter() 
+    protected function startRouter() 
     {        
         $router = new Router();
         $router->route('',          '0');
         $router->route('index.php', '0');
-        $router->route('business',  '1');
+        $router->route('php',       '1');
+        $router->route('python',    '2');
+        $router->route('contact',   '3');
         $this->router = $router;
     }
     private function twigarr_init()
     {        
         $this->twigarr['site_title'] = SITE_TITLE;
         $this->twigarr['www'] = WWW;
-        $this->twigarr['countries'] = BusinessModel::countriesList();
-        $this->twigarr['categories'] = BusinessModel::categoriesList();
     }
     
     
     public function invoke() 
     {
-        if ($this->router->get() == '1') {
-            $gc = new BusinessController();
-            $gc->invoke();
-        }
-        else {
-            $this->front();
+        switch ($this->router->get()) {
+            case '1':
+                $this->pagePhp();
+                break;
+            case '2':
+                $this->pagePython();
+                break;
+            case '3':
+                $this->pageContact();
+                break;
+            default:
+                $this->front();
         }
     }
     
-    protected function front() {
+    protected function pageFront() {
         $template = $this->twig->load('front.twig');
-        //$this->twigarr['businesses'] = BusinessModel::businessObjsArr();
-        $this->twigarr['businesses'] = BusinessModel::newestBusinesses();
-        echo $template->render($this->twigarr);
-        // change this to 
-        //      Latest Business Added
-        //      Country Lookup
-        //      Add New Business button
-        
+        echo $template->render($this->twigarr);   
     }
     
-    protected function warning($message) 
-    {
-        $template = $this->twig->load('warning.twig');
-        $this->twigarr['message'] = $message; 
-        echo $template->render($this->twigarr);                
-            
+    protected function pagePhp() {
+        $this->twigarr['projects'] = PhpModel::projects();
+        $template = $this->twig->load('languages/php.twig');
+        echo $template->render($this->twigarr);   
+    }
+    protected function pagePython() {
+        $this->twigarr['projects'] = PythonModel::projects();
+        $template = $this->twig->load('languages/python.twig');
+        echo $template->render($this->twigarr);   
+    }
+    protected function pageContact() {
+        $check = ContactModel::checkContactForm();
+        switch ($check['status']) {
+            case '1':
+                $this->twigarr['status'] = 'success';
+                break;
+            case 'warning':
+                $this->twigarr['status'] = 'danger';
+                $this->twigarr['message'] = $check['warning'];
+                break;
+        }
+        $template = $this->twig->load('contact.twig');
+        echo $template->render($this->twigarr);   
     }
 }
