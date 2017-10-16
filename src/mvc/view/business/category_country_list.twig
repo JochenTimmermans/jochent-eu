@@ -1,0 +1,31 @@
+{{ include('_header.twig') }}
+
+<h2 class="page-header">{{ category_name }}</h2>
+
+  {% for country in catcountries %}
+
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">{{ country.name }}</th>
+            </tr>
+          </thead>
+          <tbody>
+
+    {% for biz in country.bizzes %}
+            
+            <tr>
+              <td>
+                <a href="{{ www }}business/country/{{ biz.addressCountry }}/city/{{ biz.addressCity }}">{{ biz.addressCity }}</a>
+              </td>
+              <td><a href="{{ www }}business/lookup/{{ biz.id }}/">{{ biz.name }} </a></td>
+            </tr>
+  {% endfor %}
+  
+          </tbody>
+        </table>
+
+  {% endfor %}
+
+
+{{ include('_footer.twig') }}

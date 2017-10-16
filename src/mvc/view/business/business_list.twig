@@ -1,0 +1,29 @@
+{{ include('_header.twig') }}
+
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Businesses accepting Bitcoin</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            {% for biz in businesses %}
+  
+            <tr>
+              <td>
+                <a href="{{ www }}business/country/{{ biz.addressCountry }}">{{ biz.addressCountry }}</a>
+                  {% if not biz.countryWideBool %}
+                    - <a href="{{ www }}business/country/{{ biz.addressCountry }}/city/{{ biz.addressCity }}">{{ biz.addressCity }}</a>
+                  {% endif %}
+              </td>
+              <td><a href="{{ www }}business/lookup/{{ biz.id }}/">{{ biz.name }} </a></td>
+            </tr>
+  
+            {% endfor %}
+  
+          </tbody>
+        </table>
+
+
+{{ include('_footer.twig') }}

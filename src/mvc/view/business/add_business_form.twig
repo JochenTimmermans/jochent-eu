@@ -1,0 +1,94 @@
+{{ include('_header.twig') }}
+
+<h2 class="page-header">Submit a New Business</h2>
+
+{% if warning is defined %}
+
+<div class="alert alert-danger text-center"> {{ warning }} </div>
+
+{% endif %}
+
+<form class="form-horizontal" action="{{ www }}business/add" method="POST">
+    <div class="form-group">
+        <label class="control-label col-sm-2 col-lg-3" for="business_name">Business Name:</label>
+        <div class="col-sm-10 col-lg-9">
+            <input type="text" class="form-control" id="business_name" name="nbf_business_name" placeholder="Enter business name">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2 col-lg-3" for="website">Website:</label>
+        <div class="col-sm-10 col-lg-9">
+            <input type="text" class="form-control" id="website" name="nbf_website" placeholder="Enter business website">
+        </div>
+    </div>
+    
+    <h4>Business Location</h4>
+    <hr>
+    <div class="form-group">
+      <label class="control-label col-sm-2 col-lg-3" for="address_line1">Address Line 1:</label>
+      <div class="col-sm-10 col-lg-9">
+        <input type="text" class="form-control" id="address_line1" name="nbf_address_line1" placeholder="Enter street info">
+      </div>
+    </div>    
+    
+    <div class="form-group">
+      <label class="control-label col-sm-2 col-lg-3" for="address_line2">Address Line 2:</label>
+      <div class="col-sm-10 col-lg-9">
+        <input type="text" class="form-control" id="address_line2" name="nbf_address_line2" placeholder="Extra address line">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label class="control-label col-sm-2 col-lg-3" for="sa_postcode">Postal Code</label>
+      <div class="col-sm-10 col-lg-9">
+        <input type="text" class="form-control" id="sa_postcode" name="nbf_address_postcode" placeholder="Enter postal code">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label class="control-label col-sm-2 col-lg-3" for="sa_city">City:</label>
+      <div class="col-sm-10 col-lg-9">
+        <input type="text" class="form-control" id="sa_city" name="nbf_address_city" placeholder="Enter city">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label class="control-label col-sm-2 col-lg-3" for="sa_state">State:</label>
+      <div class="col-sm-10 col-lg-9">
+        <input type="text" class="form-control" id="sa_state" name="nbf_address_state" placeholder="Enter state">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label class="control-label col-sm-2 col-lg-3" for="country">Country:</label>
+      <div class="col-sm-10 col-lg-9">
+    
+        {% if countries is defined %}
+        <select id="country" name="nbf_address_country">
+              
+          {% for country in countries %}              
+            <option value="{{ country.id }}">{{ country.name }}</option>                
+          {% endfor %}
+          
+        </select>
+        {% else %}
+        <input type="text" class="form-control" id="country" name="nbf_address_country" placeholder="Enter Country">
+        {% endif %}
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label class="control-label" for="country_wide">Country-wide business?</label>&nbsp;
+      <input type="checkbox" id="country_wide" name="nfb_country_wide" value="1"/>
+      
+    </div>
+    
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10 col-lg-offset-3 col-lg-9">
+            <input type="hidden" name="addbusinessform" value="go" />
+            <button type="submit" class="btn btn-primary col-lg-10">Submit</button>
+        </div>
+    </div>
+</form>
+
+{{ include('_footer.twig') }}

@@ -1,0 +1,16 @@
+<div id="search-bar">
+  <h3>Search</h3>
+  <div class="form-group">
+    <input type="text" name="search_name"/>
+    <select name="search_tags">
+      {% for category in categories %}
+        <option value="category.id">{{ category.id }}</select>
+      {% endfor %}
+    </select>
+    <select name="search_country">
+      {% for country in countries %}
+        <option value="country.id">{{ country.name }}</select>
+      {% endfor %}
+    </select>
+  </div>
+</div>

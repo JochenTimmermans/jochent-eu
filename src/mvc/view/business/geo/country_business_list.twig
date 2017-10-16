@@ -1,0 +1,26 @@
+{{ include('_header.twig') }}
+
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">{{ country_name }}</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            {% for biz in countrybiz %}
+  
+            <tr>
+              <td>
+                <a href="{{ www }}business/country/{{ biz.addressCountry }}/city/{{ biz.addressCity }}">{{ biz.addressCity }}</a>
+              </td>
+              <td><a href="{{ www }}business/lookup/{{ biz.id }}/">{{ biz.name }} </a></td>
+            </tr>
+  
+            {% endfor %}
+  
+          </tbody>
+        </table>
+
+
+{{ include('_footer.twig') }}

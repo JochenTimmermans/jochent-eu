@@ -1,0 +1,17 @@
+{{ include('_header.twig') }}
+
+      <h3 ckass="page-header">{{ business.name }}</h3>
+      <a href="{{ business.website }}" target="_blank">website</a>
+      <hr>
+      <h4>Address</h4>
+      <div class="address">
+        {{ business.addressLine1 }}<br/>
+        {% if business.addressLine2 is not empty %}
+        {{ business.addressLine2 }}<br/>
+        {% endif %}
+        {{ business.addressPostcode }} {{ business.addressCity }}<br/>
+        {{ business.addressState }}<br/>
+        {{ business.addressCountry }}<br/>
+      </div>
+
+{{ include('_footer.twig') }}
