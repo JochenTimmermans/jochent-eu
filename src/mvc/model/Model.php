@@ -1,6 +1,6 @@
 <?php
 
-namespace btcbe\mvc\model;
+namespace jochen\mvc\model;
 
 /**
  * Description of Model
