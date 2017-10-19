@@ -13,11 +13,11 @@ require ROOT_URL.'config.local.php';
 define('WWW', BASE_URL);
 
 define("MYSQL_HOST","localhost");
-define("MYSQL_USER","btcbeuser");
-define("MYSQL_PASS","btcbeuser12345");
-define("MYSQL_DB","btcbe");
+define("MYSQL_USER","jochenuser");
+define("MYSQL_PASS","jochenuser12345");
+define("MYSQL_DB","jochen");
 
-define('SITE_TITLE', 'BTC Belgium');
+define('SITE_TITLE', 'JochenT');
 
 //router
 define('BASE_ROUTE', 'public/');

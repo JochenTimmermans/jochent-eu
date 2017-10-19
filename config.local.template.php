@@ -1,4 +1,4 @@
 <?php
 
-define('BASE_URL', 'https://btc.islandshore.net/');
+define('BASE_URL', 'https://my.domain.net/');
 
