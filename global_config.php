@@ -26,11 +26,7 @@ require_once 'vendor/autoload.php';
 require_once 'src/modules/freestrouter/Router.php';
 
 require_once 'src/mvc/controller/Controller.php';
-require_once 'src/mvc/controller/BusinessController.php';
 
-require_once 'src/mvc/model/Model.php';
-require_once 'src/mvc/model/BusinessModel.php';
-
-require_once 'src/modules/Country.php';
-require_once 'src/modules/Business.php';
-require_once 'src/modules/Category.php';
+require_once 'src/mvc/model/PhpModel.php';
+require_once 'src/mvc/model/PythonModel.php';
+require_once 'src/mvc/model/ContactModel.php';

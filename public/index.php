@@ -1,7 +1,6 @@
 <?php
-session_start();
 
-use btcbe\mvc\controller\Controller as Controller;
+use jochen\mvc\controller\Controller;
 
 require '../global_config.php';
 

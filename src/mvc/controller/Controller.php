@@ -61,7 +61,7 @@ class Controller
                 $this->pageContact();
                 break;
             default:
-                $this->front();
+                $this->pageFront();
         }
     }
     
@@ -75,11 +75,13 @@ class Controller
         $template = $this->twig->load('languages/php.twig');
         echo $template->render($this->twigarr);   
     }
+    
     protected function pagePython() {
         $this->twigarr['projects'] = PythonModel::projects();
         $template = $this->twig->load('languages/python.twig');
         echo $template->render($this->twigarr);   
     }
+    
     protected function pageContact() {
         $check = ContactModel::checkContactForm();
         switch ($check['status']) {
@@ -94,4 +96,5 @@ class Controller
         $template = $this->twig->load('contact.twig');
         echo $template->render($this->twigarr);   
     }
+    
 }
