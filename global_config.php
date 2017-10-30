@@ -12,10 +12,6 @@ if (!file_exists(ROOT_URL.'config.local.php')) {
 require ROOT_URL.'config.local.php';
 define('WWW', BASE_URL);
 
-define("MYSQL_HOST","localhost");
-define("MYSQL_USER","jochenuser");
-define("MYSQL_PASS","jochenuser12345");
-define("MYSQL_DB","jochen");
 
 define('SITE_TITLE', 'JochenT');
 
