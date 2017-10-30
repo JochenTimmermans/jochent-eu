@@ -1,12 +1,32 @@
-{{ include('_header.twig') }}
+{{ include('page/start.twig') }}
 
+<h1>&lt;?PHP Projects</h1>
 
-<div id="nav-list" class="text-center">
-  <ul>
-    <li><a href="{{www}}php/">&lt;PHP/&gt;</a></li>
-    <li><a href="{{www}}python/">&lt;Python/&gt;</a></li>
-    <li><a href="{{www}}contact/"><i class="fa fa-envelope"></i>Contact</a></li>
-  </ul>
+<div id="projects">
+{% if projects is defined %}
+  
+  {% for project in projects %}
+    
+  <div class="project">
+    <a href="{{www}}project/{{project.id}}/">
+      
+      <div class="project-image">
+        <img src="{{ www }}images/{{ project.imgurl }}" alt="{{ project.title }}"/>
+      </div>
+      
+      <div class="project-title">
+        {{- project.title -}}
+      </div>
+
+    </a>
+  </div>
+  
+  {% endfor %}
+  
+{% else %}
+
+  <p>No projects found.</p>
+  
+{% endif %}
 </div>
-
-{{ include('_footer.twig') }}
+{{ include('page/end.twig') }}

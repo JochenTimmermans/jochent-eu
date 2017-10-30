@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> {{ site_title }} </title> 
-    <link href="{{ www }}stylesheets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet"> 
     <link href="{{ www }}stylesheets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="{{ www }}stylesheets/css/default.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -15,13 +15,9 @@
   </head>
   <body>
     
-    <div class="fluid-container">
-
-      <div class="row">
-
-        <div class="col-lg-2" id="jochent-pic">
-          
-        </div>
-     
-        <div class="col-lg-8">
+    <div class="sidebar">
+      {{ include('page/_sidebar.twig') }}
+    </div>
+    
+    <div class="main">
         

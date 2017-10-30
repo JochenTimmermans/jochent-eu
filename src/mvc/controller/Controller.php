@@ -2,10 +2,11 @@
 
 namespace jochen\mvc\controller;
 
-use Twig_Loader_Filesystem;
-use Twig_Environment;
+use Twig_Loader_Filesystem, 
+    Twig_Environment;
 
-use freest\router\Router as Router;
+use freest\router\Router;
+use jochen\mvc\model\ProjectModel;
 
 /* 
  * Controller.php
@@ -36,9 +37,8 @@ class Controller
         $router = new Router();
         $router->route('',          '0');
         $router->route('index.php', '0');
-        $router->route('php',       '1');
-        $router->route('python',    '2');
-        $router->route('contact',   '3');
+        $router->route('project',   '1');
+        $router->route('contact',   '2');
         $this->router = $router;
     }
     private function twigarr_init()
@@ -52,12 +52,9 @@ class Controller
     {
         switch ($this->router->get()) {
             case '1':
-                $this->pagePhp();
+                $this->pageProject();
                 break;
             case '2':
-                $this->pagePython();
-                break;
-            case '3':
                 $this->pageContact();
                 break;
             default:
@@ -66,22 +63,22 @@ class Controller
     }
     
     protected function pageFront() {
+        $this->twigarr['projects'] = ProjectModel::projects();
         $template = $this->twig->load('front.twig');
         echo $template->render($this->twigarr);   
     }
     
-    protected function pagePhp() {
-        $this->twigarr['projects'] = PhpModel::projects();
-        $template = $this->twig->load('languages/php.twig');
-        echo $template->render($this->twigarr);   
+    protected function pageProject() {        
+        if (ProjectModel::isValidProjectId($this->router->getUri(1))) {
+            $this->twigarr['project'] = ProjectModel::project($this->router->getUri(1));
+            $template = $this->twig->load('project.twig');
+            echo $template->render($this->twigarr);   
+        }
+        else {
+            $this->pageFront();
+        }
     }
-    
-    protected function pagePython() {
-        $this->twigarr['projects'] = PythonModel::projects();
-        $template = $this->twig->load('languages/python.twig');
-        echo $template->render($this->twigarr);   
-    }
-    
+        
     protected function pageContact() {
         $check = ContactModel::checkContactForm();
         switch ($check['status']) {

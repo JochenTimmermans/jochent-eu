@@ -3,7 +3,7 @@
  * Created: Oct 16, 2017
  */
 
-INSERT INTO projects (cat_id,title,descr) VALUES 
-(1, 'The Oracle', 'An Oracle Site'),
-(1, 'Hangman', 'A Hangman game for 1 or 2 players'),
-(2, 'Calculator', 'A Python calculator');
+INSERT INTO projects (title,descr,imgurl) VALUES 
+('The Oracle', 'An Oracle Site',                   'img1.png'),
+('Hangman',    'A Hangman game for 1 or 2 players','img1.png'),
+('Calculator', 'A Python calculator',              'img1.png');

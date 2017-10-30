@@ -31,6 +31,7 @@ require_once 'src/modules/freestrouter/Router.php';
 
 require_once 'src/mvc/controller/Controller.php';
 
-require_once 'src/mvc/model/PhpModel.php';
-require_once 'src/mvc/model/PythonModel.php';
+require_once 'src/mvc/model/ProjectModel.php';
 require_once 'src/mvc/model/ContactModel.php';
+
+require_once 'src/modules/Project.php';
