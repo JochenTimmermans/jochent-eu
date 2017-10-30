@@ -1,5 +1,23 @@
-{{ include('_header.twig') }}
+{{ include('page/start.twig') }}
 
-  {{ include('business/bits/newest_businesses.twig') }}
-
-{{ include('_footer.twig') }}
+<h1>&lt;?{{ project.title }}</h1>
+<div class="canvas" id="project">
+  
+  <div class="project-image">
+    <img src="{{ project.imgurlFull }}" alt="{{ project.title}}"/>
+  </div>
+  <h3 class="project-title">
+    {{ project.title }}
+  </h3>
+  <div class="project-description">
+    {{ project.description }}
+  </div>
+  <div class="project-link">
+    <a href="{{ project.projecturl }}" target="_blank">Link to project</a>
+  </div>
+  
+  <div class="crumb">
+    <a href="{{www}}">back to home</a>
+  </div>
+</div>
+{{ include('page/end.twig') }}

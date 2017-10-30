@@ -1,0 +1,80 @@
+/* 
+    Created on : Oct 30, 2017, 1:57:28 PM
+    Author     : jfreeman82 <jfreeman@skedaddling.com>
+*/
+
+
+.sidebar {
+  $img_me: $url + 'images/me.jpg'; 
+  background-image: url($img_me);
+  background-position-x: 20%;
+  background-size: auto 100%;
+  float: left;
+  height: 100vh; 
+  width: 20vw;
+  position: relative;
+  
+  .topdiv {
+
+
+    a {
+      background-color: rgba(255,255,255,0.1);
+      color: black;
+      display: block;
+      font-size: 18pt;
+      padding: 10px 0;
+      text-align: center;
+      text-decoration: none;
+
+
+      &:visited {
+        color: black;
+      }
+      &:hover {
+        background-color:rgba(255,255,255,0.3);
+      }
+    }
+  }
+  
+  
+  .bottomdiv {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+      
+    .social {
+      padding-bottom: 20px;
+      text-align: center;
+      
+      a {
+        margin: 0 10px;
+        color: $black;
+        &:hover,&:active {
+          color: $black-light
+        }
+      }
+    }
+    .contact {
+
+      a {
+        background-color: rgba(255,255,255,0.1);
+        color: black;
+        display: block;
+        font-size: 18pt;
+        padding: 10px 0;
+        text-align: center;
+        text-decoration: none;
+
+
+        &:visited {
+          color: black;
+        }
+        &:hover {
+          background-color:rgba(255,255,255,0.3);
+        }
+      }
+    }
+  }
+}
+ 

@@ -6,7 +6,9 @@ use Twig_Loader_Filesystem,
     Twig_Environment;
 
 use freest\router\Router;
-use jochen\mvc\model\ProjectModel;
+use jochen\mvc\model\ProjectModel,
+    jochen\mvc\model\ContactModel,
+    jochen\projects\Project;
 
 /* 
  * Controller.php
@@ -70,7 +72,7 @@ class Controller
     
     protected function pageProject() {        
         if (ProjectModel::isValidProjectId($this->router->getUri(1))) {
-            $this->twigarr['project'] = ProjectModel::project($this->router->getUri(1));
+            $this->twigarr['project'] = new Project($this->router->getUri(1));
             $template = $this->twig->load('project.twig');
             echo $template->render($this->twigarr);   
         }
@@ -83,11 +85,10 @@ class Controller
         $check = ContactModel::checkContactForm();
         switch ($check['status']) {
             case '1':
-                $this->twigarr['status'] = 'success';
+                $this->twigarr['success'] = 'Your message has been received. I will reply as soon as possible.';
                 break;
             case 'warning':
-                $this->twigarr['status'] = 'danger';
-                $this->twigarr['message'] = $check['warning'];
+                $this->twigarr['danger'] = $check['warning'];
                 break;
         }
         $template = $this->twig->load('contact.twig');

@@ -9,5 +9,6 @@ CREATE TABLE projects (
   title VARCHAR(255),
   descr TEXT,
   imgurl TEXT,
+  projecturl TEXT,
   created DATETIME
 );

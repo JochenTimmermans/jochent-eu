@@ -7,9 +7,7 @@ ini_set('display_errors', 1);
 define('ROOT_URL', $_SERVER['DOCUMENT_ROOT'].'/../');
 
 if (!file_exists(ROOT_URL.'config.local.php')) {
-	echo '<h1>Coming Soon...</h1>';
-	exit(0);
-//    die(ROOT_URL."config.local not found.");
+    die(ROOT_URL."config.local not found.");
 }
 require ROOT_URL.'config.local.php';
 define('WWW', BASE_URL);
@@ -27,6 +25,7 @@ define('BASE_ROUTE', 'public/');
 
 // Requires
 require_once 'src/modules/DBC.php';
+require_once 'src/modules/Error.php';
 
 require_once 'vendor/autoload.php';
 require_once 'src/modules/freestrouter/Router.php';
