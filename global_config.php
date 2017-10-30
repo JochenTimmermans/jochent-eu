@@ -7,7 +7,9 @@ ini_set('display_errors', 1);
 define('ROOT_URL', $_SERVER['DOCUMENT_ROOT'].'/../');
 
 if (!file_exists(ROOT_URL.'config.local.php')) {
-    die(ROOT_URL."config.local not found.");
+	echo '<h1>Coming Soon...</h1>';
+	exit(0);
+//    die(ROOT_URL."config.local not found.");
 }
 require ROOT_URL.'config.local.php';
 define('WWW', BASE_URL);
