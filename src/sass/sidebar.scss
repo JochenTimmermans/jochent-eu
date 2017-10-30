@@ -5,9 +5,9 @@
 
 
 .sidebar {
-  $img_me: $url + 'images/me.jpg'; 
+  $img_me: $url + 'images/me1.JPG'; 
   background-image: url($img_me);
-  background-position-x: 20%;
+  background-position-x: 50%;
   background-size: auto 100%;
   float: left;
   height: 100vh; 
@@ -18,7 +18,7 @@
 
 
     a {
-      background-color: rgba(255,255,255,0.1);
+      background-color: rgba(255,255,255,0.2);
       color: black;
       display: block;
       font-size: 18pt;
