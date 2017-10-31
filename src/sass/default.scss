@@ -91,15 +91,20 @@ body {
     margin-top: 20px;
     img { 
       margin: 0 auto;
-      width: 80%;
+      width: 60%;
     }
     
   }
   .project-title {
+    margin-top: 20px;
   }
   .project-description {
     padding: 20px 0;
     width: 80%;
+    
+    p {
+      margin-top: 5px; 
+    }
   }
   .project-link {
     

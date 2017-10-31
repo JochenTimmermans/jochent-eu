@@ -10,7 +10,7 @@
     {{ project.title }}
   </h3>
   <div class="project-description">
-    {{ project.description }}
+    {{ project.description | raw }}
   </div>
   <div class="project-link">
     <a href="{{ project.projecturl }}" target="_blank">Link to project</a>
