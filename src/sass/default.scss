@@ -22,6 +22,9 @@ body {
 }
  
 @import 'sidebar';
+@import 'project';
+@import 'contact';
+
 
 .main {
   box-sizing: border-box;
@@ -83,97 +86,90 @@ body {
   }
 }
 
-#project {
-  margin: 0 auto;
-  padding: 20px;
-  width: 80%;
-  .project-image {
-    margin-top: 20px;
-    img { 
-      margin: 0 auto;
-      width: 60%;
-    }
-    
-  }
-  .project-title {
-    margin-top: 20px;
-  }
-  .project-description {
-    padding: 20px 0;
-    width: 80%;
-    
-    p {
-      margin-top: 5px; 
-    }
-  }
-  .project-link {
-    
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (max-width: 479px) {
+  body {
+    padding: 0;
   }
   
-  .crumb {
-    margin-top: 20px;
+  .main {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 190px;
+    width: 100vw;
+
+
+    h1 {
+      font-size: 24pt;
+      margin: 0;
+      width: 100%;
+    }
+
+  }
+
+  .canvas {
+    width: 135px;
+    margin: 0 auto;
+    
+    .project {
+      height: 150px;
+      width: 130px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      margin: 20px auto;
+
+
+      a {
+        height: 100%;
+        width: 100%;
+        color: black;
+        text-decoration: none;
+
+        &:hover, &:active {
+          img {
+        -webkit-filter: brightness(50%);
+          }
+          .project-title {
+            background-color: #999;
+          }
+        }
+
+
+        .project-image {
+          height: 120px;
+          overflow: hidden;
+
+          background-repeat: no-repeat;
+          background-position: center; 
+          background-size: auto 100%;
+
+        }
+        .project-title {
+          text-align: center;
+          padding-top: 5px;
+          height: 25px;
+        }
+
+        
+      }
+
+    }
   }
 }
 
-form {  
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  margin-top: 20px;
-  margin-left: 20px;
-  padding: 20px 30px;
-  width: 400px;
-  
-  .form-group {
-    margin-top: 24px;
-  
-    input,textarea {
-      box-sizing: border-box;
-      border: 2px solid #ccc;
-      border-radius: 5px;
-      display: block;
-      font-size: 10pt;
-      margin-top: 4px;
-      padding: 5px 10px;
-      width: 100%;
-      &:focus {
-        border-color: lighten($color1,20%);
-      }
-    }
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (min-width: 480px) {
 
-    textarea {
-      height: 150px;
-      box-sizing: border-box;
-      border-radius: 5px;
-      resize: none;
-    }
-    
-  }
-  .btn {
-    background-color: lighten($color1,10%);
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    margin-top: 20px;
-    padding: 5px 10px;
-    width: 100%;
-    
-    &:hover, &:active {
-      background-color: $color1;
-    }
-  }
-  
-  .alert {
-    border-radius: 5px;
-    box-sizing: border-box;
-    padding: 10px 15px;
-    text-align: center;
-    width: 100%;
-  }
-  .alert-danger {
-    background-color: lighten($color1,10%);
-    color: white;
-  }
-  .alert-success {
-    background-color: lighten(green,10%);
-    color: white;
-  }
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {
+
+}
+
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 1024px) {
+
 }
