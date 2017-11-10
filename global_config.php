@@ -3,13 +3,10 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-
-define('ROOT_URL', $_SERVER['DOCUMENT_ROOT'].'/../');
-
-if (!file_exists(ROOT_URL.'config.local.php')) {
-    die(ROOT_URL."config.local not found.");
+if (!file_exists('../config.local.php')) {
+    die("config.local not found.");
 }
-require ROOT_URL.'config.local.php';
+require 'config.local.php';
 define('WWW', BASE_URL);
 
 

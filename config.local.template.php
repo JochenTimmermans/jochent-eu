@@ -1,6 +1,7 @@
 <?php
 
 define('BASE_URL', 'https://my.domain.net/');
+define('ROOT_URL', $_SERVER['DOCUMENT_ROOT'].'/../');
 
 
 define("MYSQL_HOST","localhost");
