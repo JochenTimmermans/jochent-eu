@@ -50,6 +50,20 @@
       a {
         margin: 0 10px;
         color: $black;
+        
+        .mastodon {
+          display: inline-block;
+          $img_mastodon: $url + 'images/mastodon_dark.png'; 
+          background-image: url($img_mastodon);
+          background-size: cover;
+          height: 24px;
+          width: 24px;
+          &:hover {
+            $img_mastodon: $url + 'images/mastodon_dark_light.png'; 
+            background-image: url($img_mastodon);           
+          }
+        }
+        
         &:hover,&:active {
           color: $black-light
         }

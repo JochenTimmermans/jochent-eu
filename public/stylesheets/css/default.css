@@ -1,2 +1,359 @@
-*{margin:0;padding:0}body{padding:0;color:#111;font-family:"Ubuntu Mono"}.sidebar{background-image:url("https://jochen.islandshore.net/images/me1.JPG");background-position-x:50%;background-size:auto 100%;float:left;height:100vh;width:20vw;position:relative}.sidebar .topdiv a{background-color:rgba(255,255,255,0.2);color:black;display:block;font-size:18pt;padding:10px 0;text-align:center;text-decoration:none}.sidebar .topdiv a:visited{color:black}.sidebar .topdiv a:hover{background-color:rgba(255,255,255,0.3)}.sidebar .bottomdiv{position:absolute;bottom:0;display:block;width:100%}.sidebar .bottomdiv .social{padding-bottom:20px;text-align:center}.sidebar .bottomdiv .social a{margin:0 10px;color:#111}.sidebar .bottomdiv .social a:hover,.sidebar .bottomdiv .social a:active{color:#333}.sidebar .bottomdiv .contact a{background-color:rgba(255,255,255,0.1);color:black;display:block;font-size:18pt;padding:10px 0;text-align:center;text-decoration:none}.sidebar .bottomdiv .contact a:visited{color:black}.sidebar .bottomdiv .contact a:hover{background-color:rgba(255,255,255,0.3)}@media only screen and (max-width: 479px){.sidebar{background-position-y:40%;background-size:100% auto;height:100px;width:100vw}.sidebar .topdiv{position:relative;top:100px;left:0;height:20px;width:100%}.sidebar .topdiv a{background-color:rgba(255,255,255,0.2);display:block;font-size:15pt;padding:10px 0;text-align:center;text-decoration:none}.sidebar .topdiv a:visited{color:black}.sidebar .topdiv a:hover{background-color:rgba(0,0,0,0.3)}.sidebar .bottomdiv .social a{color:white}.sidebar .bottomdiv .social a:hover,.sidebar .bottomdiv .social a:active{color:#333}.sidebar .bottomdiv .social a:first-of-type{position:absolute;top:-20px;left:5px}.sidebar .bottomdiv .social a:last-of-type{position:absolute;top:-20px;right:5px}.sidebar .bottomdiv .contact{position:relative;top:90px;width:100%}.sidebar .bottomdiv .contact a{background-color:rgba(255,255,255,0.1);color:black;font-size:15pt;padding:10px 0;text-align:center;text-decoration:none}.sidebar .bottomdiv .contact a:visited{color:black}.sidebar .bottomdiv .contact a:hover{background-color:rgba(0,0,0,0.3)}}#project{margin:0 auto;padding:20px;width:80%}#project .project-image{margin-top:20px}#project .project-image img{margin:0 auto;width:80%}#project .project-description{padding:20px 0;width:80%}#project .crumb{margin-top:20px}@media only screen and (max-width: 479px){#project{margin:0 auto;width:90%}#project .project-image img{margin:0 auto;width:80%}#project .project-description{padding:20px 0;text-align:left;width:80%}#project .crumb{margin-top:20px}}form{box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);margin-top:20px;margin-left:20px;padding:20px 30px;width:400px}form .form-group{margin-top:24px}form .form-group input,form .form-group textarea{box-sizing:border-box;border:2px solid #ccc;border-radius:5px;display:block;font-size:10pt;margin-top:4px;padding:5px 10px;width:100%}form .form-group input:focus,form .form-group textarea:focus{border-color:#f66}form .form-group textarea{height:150px;box-sizing:border-box;border-radius:5px;resize:none}form .btn{background-color:#f33;border-radius:5px;color:white;cursor:pointer;margin-top:20px;padding:5px 10px;width:100%}form .btn:hover,form .btn:active{background-color:red}form .alert{border-radius:5px;box-sizing:border-box;padding:10px 15px;text-align:center;width:100%}form .alert-danger{background-color:#f33;color:white}form .alert-success{background-color:#00b300;color:white}@media only screen and (max-width: 479px){.main h1{text-align:left}.main .projectcanvas{margin:0;padding:0;width:100%;text-align:left}.main .projectcanvas form{box-sizing:border-box;box-shadow:none;padding:0;width:100%}.main .projectcanvas form .form-group{box-sizing:border-box;margin:24px auto 0 auto;display:block;text-align:left;width:100%}.main .projectcanvas form .form-group input,.main .projectcanvas form .form-group textarea{box-sizing:border-box;border:2px solid #ccc;border-radius:5px;display:block;font-size:10pt;margin-top:4px;padding:5px 10px;width:80%}.main .projectcanvas form .form-group input:focus,.main .projectcanvas form .form-group textarea:focus{border-color:#f66}.main .projectcanvas form .form-group textarea{height:150px;box-sizing:border-box;border-radius:5px;resize:none}.main .projectcanvas form .btn{background-color:#f33;border-radius:5px;color:white;cursor:pointer;margin:20px auto;padding:5px 10px;width:80%}.main .projectcanvas form .btn:hover,.main .projectcanvas form .btn:active{background-color:red}.main .projectcanvas form .alert{border-radius:5px;box-sizing:border-box;padding:7px 10px;display:block;text-align:center;width:80%}.main .projectcanvas form .alert-danger{background-color:#f33;color:white}.main .projectcanvas form .alert-success{background-color:#00b300;color:white}}.main{box-sizing:border-box;float:left;padding:20px 30px 0 30px;width:70vw}.main h1{display:block}.canvas{margin-left:15px}.canvas .project{height:150px;width:130px;float:left;display:inline-block;box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);margin:20px}.canvas .project a{height:100%;width:100%;color:black;text-decoration:none}.canvas .project a:hover img,.canvas .project a:active img{-webkit-filter:brightness(50%)}.canvas .project a:hover .project-title,.canvas .project a:active .project-title{background-color:#999}.canvas .project a .project-image{height:120px;overflow:hidden;background-repeat:no-repeat;background-position:center;background-size:auto 100%}.canvas .project a .project-title{text-align:center;padding-top:5px;height:25px}@media only screen and (max-width: 479px){body{padding:0}.main{display:block;text-align:center;position:absolute;top:190px;width:100vw}.main h1{font-size:24pt;margin:0;width:100%}.canvas{width:135px;margin:0 auto}.canvas .project{height:150px;width:130px;box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);margin:20px auto}.canvas .project a{height:100%;width:100%;color:black;text-decoration:none}.canvas .project a:hover img,.canvas .project a:active img{-webkit-filter:brightness(50%)}.canvas .project a:hover .project-title,.canvas .project a:active .project-title{background-color:#999}.canvas .project a .project-image{height:120px;overflow:hidden;background-repeat:no-repeat;background-position:center;background-size:auto 100%}.canvas .project a .project-title{text-align:center;padding-top:5px;height:25px}}
+/* 
+    Created on : Aug 11, 2017, 11:18:16 AM
+    Author     : myrmidex
+*/
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  padding: 0;
+  color: #111;
+  font-family: "Ubuntu Mono"; }
+
+/* 
+    Created on : Oct 30, 2017, 1:57:28 PM
+    Author     : jfreeman82 <jfreeman@skedaddling.com>
+*/
+.sidebar {
+  background-image: url("https://jochen.islandshore.net/images/me1.JPG");
+  background-position-x: 50%;
+  background-size: auto 100%;
+  float: left;
+  height: 100vh;
+  width: 20vw;
+  position: relative; }
+  .sidebar .topdiv a {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+    display: block;
+    font-size: 18pt;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none; }
+    .sidebar .topdiv a:visited {
+      color: black; }
+    .sidebar .topdiv a:hover {
+      background-color: rgba(255, 255, 255, 0.3); }
+  .sidebar .bottomdiv {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%; }
+    .sidebar .bottomdiv .social {
+      padding-bottom: 20px;
+      text-align: center; }
+      .sidebar .bottomdiv .social a {
+        margin: 0 10px;
+        color: #111; }
+        .sidebar .bottomdiv .social a .mastodon {
+          display: inline-block;
+          background-image: url("https://jochen.islandshore.net/images/mastodon_dark.png");
+          background-size: cover;
+          height: 24px;
+          width: 24px; }
+          .sidebar .bottomdiv .social a .mastodon:hover {
+            background-image: url("https://jochen.islandshore.net/images/mastodon_dark_light.png"); }
+        .sidebar .bottomdiv .social a:hover, .sidebar .bottomdiv .social a:active {
+          color: #333; }
+    .sidebar .bottomdiv .contact a {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: black;
+      display: block;
+      font-size: 18pt;
+      padding: 10px 0;
+      text-align: center;
+      text-decoration: none; }
+      .sidebar .bottomdiv .contact a:visited {
+        color: black; }
+      .sidebar .bottomdiv .contact a:hover {
+        background-color: rgba(255, 255, 255, 0.3); }
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (max-width: 479px) {
+  .sidebar {
+    background-position-y: 40%;
+    background-size: 100% auto;
+    height: 100px;
+    width: 100vw; }
+    .sidebar .topdiv {
+      position: relative;
+      top: 100px;
+      left: 0;
+      height: 20px;
+      width: 100%; }
+      .sidebar .topdiv a {
+        background-color: rgba(255, 255, 255, 0.2);
+        display: block;
+        font-size: 15pt;
+        padding: 10px 0;
+        text-align: center;
+        text-decoration: none; }
+        .sidebar .topdiv a:visited {
+          color: black; }
+        .sidebar .topdiv a:hover {
+          background-color: rgba(0, 0, 0, 0.3); }
+    .sidebar .bottomdiv .social a {
+      color: white; }
+      .sidebar .bottomdiv .social a:hover, .sidebar .bottomdiv .social a:active {
+        color: #333; }
+      .sidebar .bottomdiv .social a:first-of-type {
+        position: absolute;
+        top: -20px;
+        left: 5px; }
+      .sidebar .bottomdiv .social a:last-of-type {
+        position: absolute;
+        top: -20px;
+        right: 5px; }
+    .sidebar .bottomdiv .contact {
+      position: relative;
+      top: 90px;
+      width: 100%; }
+      .sidebar .bottomdiv .contact a {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: black;
+        font-size: 15pt;
+        padding: 10px 0;
+        text-align: center;
+        text-decoration: none; }
+        .sidebar .bottomdiv .contact a:visited {
+          color: black; }
+        .sidebar .bottomdiv .contact a:hover {
+          background-color: rgba(0, 0, 0, 0.3); } }
+/* SMARTPHONES LANDSCAPE */
+/* TABLETS PORTRAIT */
+/* TABLETS PORTRAIT */
+/* 
+    Created on : Oct 31, 2017, 2:14:19 AM
+    Author     : jfreeman82 <jfreeman@skedaddling.com>
+*/
+#project {
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%; }
+  #project .project-image {
+    margin-top: 20px; }
+    #project .project-image img {
+      margin: 0 auto;
+      width: 80%; }
+  #project .project-description {
+    padding: 20px 0;
+    width: 80%; }
+  #project .crumb {
+    margin-top: 20px; }
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (max-width: 479px) {
+  #project {
+    margin: 0 auto;
+    width: 90%; }
+    #project .project-image img {
+      margin: 0 auto;
+      width: 80%; }
+    #project .project-description {
+      padding: 20px 0;
+      text-align: left;
+      width: 80%; }
+    #project .crumb {
+      margin-top: 20px; } }
+/* SMARTPHONES LANDSCAPE */
+/* TABLETS PORTRAIT */
+/* TABLETS PORTRAIT */
+/* 
+    Created on : Oct 31, 2017, 2:14:35 AM
+    Author     : jfreeman82 <jfreeman@skedaddling.com>
+*/
+form {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 20px 30px;
+  width: 400px; }
+  form .form-group {
+    margin-top: 24px; }
+    form .form-group input, form .form-group textarea {
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      display: block;
+      font-size: 10pt;
+      margin-top: 4px;
+      padding: 5px 10px;
+      width: 100%; }
+      form .form-group input:focus, form .form-group textarea:focus {
+        border-color: #ff6666; }
+    form .form-group textarea {
+      height: 150px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      resize: none; }
+  form .btn {
+    background-color: #ff3333;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 5px 10px;
+    width: 100%; }
+    form .btn:hover, form .btn:active {
+      background-color: red; }
+  form .alert {
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    text-align: center;
+    width: 100%; }
+  form .alert-danger {
+    background-color: #ff3333;
+    color: white; }
+  form .alert-success {
+    background-color: #00b300;
+    color: white; }
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (max-width: 479px) {
+  .main h1 {
+    text-align: left; }
+  .main .projectcanvas {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: left; }
+    .main .projectcanvas form {
+      box-sizing: border-box;
+      box-shadow: none;
+      padding: 0;
+      width: 100%; }
+      .main .projectcanvas form .form-group {
+        box-sizing: border-box;
+        margin: 24px auto 0 auto;
+        display: block;
+        text-align: left;
+        width: 100%; }
+        .main .projectcanvas form .form-group input, .main .projectcanvas form .form-group textarea {
+          box-sizing: border-box;
+          border: 2px solid #ccc;
+          border-radius: 5px;
+          display: block;
+          font-size: 10pt;
+          margin-top: 4px;
+          padding: 5px 10px;
+          width: 80%; }
+          .main .projectcanvas form .form-group input:focus, .main .projectcanvas form .form-group textarea:focus {
+            border-color: #ff6666; }
+        .main .projectcanvas form .form-group textarea {
+          height: 150px;
+          box-sizing: border-box;
+          border-radius: 5px;
+          resize: none; }
+      .main .projectcanvas form .btn {
+        background-color: #ff3333;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        margin: 20px auto;
+        padding: 5px 10px;
+        width: 80%; }
+        .main .projectcanvas form .btn:hover, .main .projectcanvas form .btn:active {
+          background-color: red; }
+      .main .projectcanvas form .alert {
+        border-radius: 5px;
+        box-sizing: border-box;
+        padding: 7px 10px;
+        display: block;
+        text-align: center;
+        width: 80%; }
+      .main .projectcanvas form .alert-danger {
+        background-color: #ff3333;
+        color: white; }
+      .main .projectcanvas form .alert-success {
+        background-color: #00b300;
+        color: white; } }
+/* SMARTPHONES LANDSCAPE */
+/* TABLETS PORTRAIT */
+/* TABLETS PORTRAIT */
+.main {
+  box-sizing: border-box;
+  float: left;
+  padding: 20px 30px 0 30px;
+  width: 70vw; }
+  .main h1 {
+    display: block; }
+
+.canvas {
+  margin-left: 15px; }
+  .canvas .project {
+    height: 150px;
+    width: 130px;
+    float: left;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    margin: 20px; }
+    .canvas .project a {
+      height: 100%;
+      width: 100%;
+      color: black;
+      text-decoration: none; }
+      .canvas .project a:hover img, .canvas .project a:active img {
+        -webkit-filter: brightness(50%); }
+      .canvas .project a:hover .project-title, .canvas .project a:active .project-title {
+        background-color: #999; }
+      .canvas .project a .project-image {
+        height: 120px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto 100%; }
+      .canvas .project a .project-title {
+        text-align: center;
+        padding-top: 5px;
+        height: 25px; }
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (max-width: 479px) {
+  body {
+    padding: 0; }
+
+  .main {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 190px;
+    width: 100vw; }
+    .main h1 {
+      font-size: 24pt;
+      margin: 0;
+      width: 100%; }
+
+  .canvas {
+    width: 135px;
+    margin: 0 auto; }
+    .canvas .project {
+      height: 150px;
+      width: 130px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      margin: 20px auto; }
+      .canvas .project a {
+        height: 100%;
+        width: 100%;
+        color: black;
+        text-decoration: none; }
+        .canvas .project a:hover img, .canvas .project a:active img {
+          -webkit-filter: brightness(50%); }
+        .canvas .project a:hover .project-title, .canvas .project a:active .project-title {
+          background-color: #999; }
+        .canvas .project a .project-image {
+          height: 120px;
+          overflow: hidden;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: auto 100%; }
+        .canvas .project a .project-title {
+          text-align: center;
+          padding-top: 5px;
+          height: 25px; } }
+/* SMARTPHONES LANDSCAPE */
+/* TABLETS PORTRAIT */
+/* TABLETS PORTRAIT */
+
 /*# sourceMappingURL=default.css.map */
