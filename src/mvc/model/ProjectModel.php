@@ -24,7 +24,7 @@ class ProjectModel
 
     public static function projects($limit = 0): array 
     {
-        if ($limit != 0) { $lim = "LIMIT $lim"; } else { $lim = ""; }
+        if ($limit != 0) { $lim = "LIMIT $limit"; } else { $lim = ""; }
         $sql = "SELECT id FROM projects ORDER BY created DESC ".$lim.";";
         $dbc = new DBC();
         $q = $dbc->query($sql) or die("ERROR @ ".__FILE__." : ".$dbc->error());
