@@ -1,0 +1,81 @@
+
+/* 
+    Created on : Oct 31, 2017, 2:14:19 AM
+    Author     : jfreeman82 <jfreeman@skedaddling.com>
+*/
+
+
+#project {
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%;
+  .project-image {
+    margin-top: 20px;
+    img { 
+      margin: 0 auto;
+      width: 80%;
+    }
+    
+  }
+  .project-title {
+  }
+  .project-description {
+    padding: 20px 0;
+    width: 80%;
+  }
+  .project-link {
+    
+  }
+  
+  .crumb {
+    margin-top: 20px;
+  }
+}
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (max-width: 479px) {
+
+  #project {
+    margin: 0 auto;
+    width: 90%;
+    .project-image { 
+      
+      img { 
+        margin: 0 auto;
+        width: 80%;
+      }
+
+    }
+    .project-title {
+    }
+    .project-description {
+      padding: 20px 0;
+      text-align: left;
+      width: 80%;
+    }
+    .project-link {
+
+    }
+
+    .crumb {
+      margin-top: 20px;
+    }
+  }
+ 
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (min-width: 480px) {
+
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {
+
+}
+
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 1024px) {
+
+}

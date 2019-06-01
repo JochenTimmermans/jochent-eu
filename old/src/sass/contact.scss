@@ -1,0 +1,172 @@
+
+/* 
+    Created on : Oct 31, 2017, 2:14:35 AM
+    Author     : jfreeman82 <jfreeman@skedaddling.com>
+*/
+
+
+form {  
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 20px 30px;
+  width: 400px;
+  
+  .form-group {
+    margin-top: 24px;
+  
+    input,textarea {
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      display: block;
+      font-size: 10pt;
+      margin-top: 4px;
+      padding: 5px 10px;
+      width: 100%;
+      &:focus {
+        border-color: lighten($color1,20%);
+      }
+    }
+
+    textarea {
+      height: 150px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      resize: none;
+    }
+    
+  }
+  .btn {
+    background-color: lighten($color1,10%);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 5px 10px;
+    width: 100%;
+    
+    &:hover, &:active {
+      background-color: $color1;
+    }
+  }
+  
+  .alert {
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    text-align: center;
+    width: 100%;
+  }
+  .alert-danger {
+    background-color: lighten($color1,10%);
+    color: white;
+  }
+  .alert-success {
+    background-color: lighten(green,10%);
+    color: white;
+  }
+}
+
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (max-width: 479px) {
+  .main {
+    
+    
+    h1 {
+      text-align: left;
+    }
+    
+    .projectcanvas {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      text-align: left;
+      
+      form {  
+        box-sizing: border-box;
+        box-shadow: none;
+        padding: 0;
+        width: 100%;
+
+        .form-group {
+          box-sizing: border-box;
+          margin: 24px auto 0 auto;
+          display: block;
+          text-align: left;
+          width: 100%;
+
+          input,textarea {
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            display: block;
+            font-size: 10pt;
+            margin-top: 4px;
+            padding: 5px 10px;
+            width: 80%;
+            &:focus {
+              border-color: lighten($color1,20%);
+            }
+          }
+
+          textarea {
+            height: 150px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            resize: none;
+          }
+
+        }
+        .btn {
+          background-color: lighten($color1,10%);
+          border-radius: 5px;
+          color: white;
+          cursor: pointer;
+          margin: 20px auto;
+          padding: 5px 10px;
+          width: 80%;
+
+          &:hover, &:active {
+            background-color: $color1;
+          }
+        }
+
+        .alert {
+          border-radius: 5px;
+          box-sizing: border-box;
+          padding: 7px 10px;
+          display: block;
+          text-align: center;
+          width: 80%;
+        }
+        .alert-danger {
+          background-color: lighten($color1,10%);
+          color: white;
+        }
+        .alert-success {
+          background-color: lighten(green,10%);
+          color: white;
+        }
+      }
+    }
+  }
+ 
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (min-width: 480px) {
+
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {
+
+}
+
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 1024px) {
+
+}
