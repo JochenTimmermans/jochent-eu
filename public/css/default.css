@@ -427,10 +427,30 @@ form .alert-success {
   padding: 5px 0;
 }
 
-#aboutme table td:first-of-type {
-  font-size: 10pt;
-  padding-right: 20px;
+#aboutme table td.key {
+  color: purple;
   text-align: right;
+}
+
+#aboutme table td.colon {
+  padding: 0 10px;
+}
+
+#aboutme table td.value {
+  color: blue;
+}
+
+#aboutme table td.value a {
+  color: blue;
+}
+
+#aboutme table td.value a:visited {
+  color: blue;
+}
+
+#aboutme .brackets {
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .main {
