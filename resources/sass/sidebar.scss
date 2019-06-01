@@ -1,0 +1,195 @@
+/* 
+    Created on : Oct 30, 2017, 1:57:28 PM
+    Author     : jfreeman82 <jfreeman@skedaddling.com>
+*/
+
+
+.sidebar {
+  $img_me: $url + 'img/me1.JPG';
+  background-image: url($img_me);
+  background-position-x: 50%;
+  background-size: auto 100%;
+  float: left;
+  height: 100vh; 
+  width: 20vw;
+  position: relative;
+  
+  .topdiv {
+
+
+    a {
+      background-color: rgba(255,255,255,0.2);
+      color: black;
+      display: block;
+      font-size: 18pt;
+      padding: 10px 0;
+      text-align: center;
+      text-decoration: none;
+
+
+      &:visited {
+        color: black;
+      }
+      &:hover {
+        background-color:rgba(255,255,255,0.3);
+      }
+    }
+  }
+  
+  
+  .bottomdiv {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+      
+    .social {
+      padding-bottom: 20px;
+      text-align: center;
+      
+      a {
+        margin: 0 10px;
+        color: $black;
+        
+        .mastodon {
+          display: inline-block;
+          $img_mastodon: $url + 'img/mastodon_dark.png';
+          background-image: url($img_mastodon);
+          background-size: cover;
+          height: 24px;
+          width: 24px;
+          &:hover {
+            $img_mastodon: $url + 'img/mastodon_dark_light.png';
+            background-image: url($img_mastodon);           
+          }
+        }
+        
+        &:hover,&:active {
+          color: $black-light
+        }
+      }
+    }
+    .contact {
+
+      a {
+        background-color: rgba(255,255,255,0.1);
+        color: black;
+        display: block;
+        font-size: 18pt;
+        padding: 10px 0;
+        text-align: center;
+        text-decoration: none;
+
+
+        &:visited {
+          color: black;
+        }
+        &:hover {
+          background-color:rgba(255,255,255,0.3);
+        }
+      }
+    }
+  }
+}
+
+
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (max-width: 479px) {
+
+  .sidebar {
+    background-position-y: 40%;
+    background-size: 100% auto;
+    height: 100px;
+    width: 100vw;
+//    position: absolute;
+    
+    .topdiv {
+      position: relative;
+      top: 100px;
+      left: 0;
+      height: 20px;
+      width: 100%;
+
+      a {
+        background-color: rgba(255,255,255,0.2);
+        display: block;
+        font-size: 15pt;
+        padding: 10px 0;
+        text-align: center;
+        text-decoration: none;
+
+
+        &:visited {
+          color: black;
+        }
+        &:hover {
+          background-color:rgba(0,0,0,0.3);
+        }
+      }
+    }
+
+
+    .bottomdiv {
+
+      .social {
+        a {
+          color: white;
+          
+          &:hover,&:active {
+            color: #333;
+          }
+          &:first-of-type {
+            position: absolute;
+            top: -20px;
+            left: 5px;
+          }
+          &:last-of-type {
+            position: absolute;
+            top: -20px;
+            right: 5px;
+          }
+        }
+        
+      }
+      .contact {
+        position: relative;
+        top: 90px;
+        width: 100%;
+        
+        a {
+          background-color: rgba(255,255,255,0.1);
+          color: black;
+          font-size: 15pt;
+          padding: 10px 0;
+          text-align: center;
+          text-decoration: none;
+
+
+          &:visited {
+            color: black;
+          }
+          &:hover {
+            background-color:rgba(0,0,0,0.3);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (min-width: 480px) {
+
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {
+
+}
+
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 1024px) {
+
+}
