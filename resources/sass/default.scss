@@ -25,6 +25,7 @@ body {
 @import 'sidebar';
 @import 'project';
 @import 'contact';
+@import 'partials/aboutme';
 
 
 .main {
@@ -41,7 +42,11 @@ body {
 
 .canvas {
   margin-left: 15px;
-  
+
+  h2.projects-header {
+    margin-top: 50px;
+  }
+
   .project {
     height: 150px;
     width: 130px;

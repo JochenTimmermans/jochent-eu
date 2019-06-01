@@ -34,7 +34,7 @@ class ContactController extends Controller
         $data = array('newmsg' => $message);
 
         Mail::send('emails.notify', $data, function($email) {
-            $email->to(env('EMAIL_ADMIN'), 'Jochen T.')
+            $email->to(env('ADMIN_EMAIL'), 'Jochen T.')
                     ->from('jochen@jochent.eu','MailerDaemon')
                     ->subject('JochenT.eu: New Message');
         });

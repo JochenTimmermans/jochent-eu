@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Project;
+use Carbon\Carbon;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -20,6 +21,15 @@ class Controller extends BaseController
         // Retrieve Projects
         $projects = Project::all();
 
-        return view('front', ['projects' => $projects]);
+        // Calculate age
+        $date = Carbon::parse(env('ADMIN_DATE_OF_BIRTH'));
+        $now = Carbon::now();
+
+        $admin = [
+            'date_of_birth' => env('ADMIN_DATE_OF_BIRTH'),
+            'age' => $date->diffInYears($now)
+        ];
+
+        return view('front', ['projects' => $projects, 'admin' => $admin]);
     }
 }
