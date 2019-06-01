@@ -1,5 +1,6 @@
-@include('page.start')
+@extends('layouts.base')
 
+@section('content')
 <h1>&lt;?Contact</h1>
 
 <div class="canvas projectcanvas">
@@ -9,6 +10,4 @@
   </div>
 
 </div>
-  
-
-@include('page.end')
+@endsection

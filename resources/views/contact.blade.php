@@ -9,7 +9,7 @@
 
     @if ($errors->any())
     <div class="alert alert-danger">
-      <ul>
+      <ul style="text-align: left;margin-left: 20px;">
         @foreach($errors->all() as $error)
           <li>{{ $error }}</li>
         @endforeach
@@ -19,27 +19,26 @@
 
     <div class="form-group">
       <label for="name">Name</label>
-      <input type="text" id="name" name="cf_name" placeholder="Your name"/>
+      <input type="text" id="name" name="user_name" placeholder="Your name"/>
     </div>
   
     <div class="form-group">
       <label for="email">Email</label>
-      <input type="email" id="email" name="cf_email" placeholder="Your email address"/>
+      <input type="email" id="email" name="user_email" placeholder="Your email address"/>
     </div>
   
     <div class="form-group">
       <label for="subject">Subject</label>
-      <input type="text" id="subject" name="cf_subject" placeholder="Subject of your message"/>
+      <input type="text" id="subject" name="subject" placeholder="Subject of your message"/>
     </div>
     
     <div class="form-group">
       <label for="message">Message</label>
-      <textarea id="message" name="cf_message" placeholder="Your message goes here..."></textarea>      
+      <textarea id="message" name="message" placeholder="Your message goes here..."></textarea>
     </div>
 
-    {{ csrf_field() }}
+      @csrf
 
-    <input type="hidden" name="cf_form" value="go"/>
     <input type="submit" class="btn" value="Send message"/>
   </form>
 </div>
