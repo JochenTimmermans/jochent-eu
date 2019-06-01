@@ -412,6 +412,27 @@ form .alert-success {
 
 /* TABLETS PORTRAIT */
 
+#aboutme {
+  border-bottom: thin solid #dddddd;
+  display: inline-block;
+  margin: 20px 0 20px 0;
+  padding: 0 0 20px 0;
+}
+
+#aboutme h2 {
+  margin-bottom: 10px;
+}
+
+#aboutme table td {
+  padding: 5px 0;
+}
+
+#aboutme table td:first-of-type {
+  font-size: 10pt;
+  padding-right: 20px;
+  text-align: right;
+}
+
 .main {
   box-sizing: border-box;
   float: left;
@@ -425,6 +446,10 @@ form .alert-success {
 
 .canvas {
   margin-left: 15px;
+}
+
+.canvas h2.projects-header {
+  margin-top: 50px;
 }
 
 .canvas .project {

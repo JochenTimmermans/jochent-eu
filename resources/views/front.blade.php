@@ -1,9 +1,13 @@
 @extends('layouts.base')
 
 @section('content')
-            <h1>&lt;?PHP Projects</h1>
+            <h1>&lt;?JochenT</h1>
 
             <div class="canvas">
+
+                @include('partials.aboutme')
+
+                <h2 class="projects-header">Projects</h2>
 
     @if(isset($projects) && count($projects) > 0)
   
