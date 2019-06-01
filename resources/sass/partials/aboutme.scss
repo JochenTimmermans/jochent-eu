@@ -12,11 +12,32 @@
     td{
       padding: 5px 0;
 
-      &:first-of-type {
-        font-size: 10pt;
-        padding-right: 20px;
+      &.key {
+        color: purple;
         text-align: right;
       }
+
+      &.colon {
+        padding: 0 10px;
+      }
+
+      &.value {
+        color: blue;
+
+        a {
+          color: blue;
+
+          &:visited {
+            color: blue;
+          }
+        }
+      }
+
     }
+  }
+
+  .brackets {
+    font-size: 25px;
+    font-weight: bold;
   }
 }
